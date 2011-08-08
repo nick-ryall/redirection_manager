@@ -505,8 +505,6 @@
 							$this->_uri . "/rules/edit/{$rule->id}/"
 						)
 					);
-					$col_name->appendChild(Widget::Input("items[{$rule->id}]", null, 'checkbox'));
-					
 					
 					$col_type = Widget::TableData($rule->type);
 					

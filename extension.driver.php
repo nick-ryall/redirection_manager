@@ -113,6 +113,7 @@
 		
 			//Get Page Type
 			$page_type = $context['page_data']['type'][0];
+		
 			
 			//Get the request URI and any the first related rule.
 			$root_dir = substr($_SERVER['SCRIPT_NAME'], 0, strrpos($_SERVER['SCRIPT_NAME'], "/")+1); 
