@@ -19,3 +19,7 @@ After installation a "Redirection Manager" menu item will appear within Symphony
 
 1. Rules -  Create expressions to redirect URLs.
 2. Logs - A log of all redirects and 404 errors on your website.
+
+## Credits
+
+Thanks to Rowan Lewis' SEO manager and Expression Field extensions from which a lot of the code was used. :)
