@@ -228,6 +228,7 @@
 							)
 						);
 					}
+					$col_type->appendChild(Widget::Input("items[{$log->id}]", null, 'checkbox'));
 					
 					if (!empty($log->request_uri)) {
 						$col_request_uri = Widget::TableData(
@@ -257,7 +258,7 @@
 					$col_time = Widget::TableData(
 						DateTimeObj::get(__SYM_DATETIME_FORMAT__, $log->request_time)
 					);
-					$col_time->appendChild(Widget::Input("items[{$log->id}]", null, 'checkbox'));
+					//$col_time->appendChild(Widget::Input("items[{$log->id}]", null, 'checkbox'));
 					
 					if (!empty($log->request_method)) {
 						$col_method = Widget::TableData(ucwords($log->request_method));
@@ -285,6 +286,7 @@
 				Widget::TableHead($tableHead), null, 
 				Widget::TableBody($tableBody)
 			);
+			$table->setAttribute('class', 'selectable');
 			
 			$this->Form->appendChild($table);
 			
